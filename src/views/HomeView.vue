@@ -4,7 +4,7 @@ import GoalSection from "@/components/HomeView/GoalSection.vue";
 </script>
 
 <template>
-  <main class="h-screen flex flex-col gap-8 px-2 pb-4">
+  <main class="h-screen flex flex-col px-2 pb-4">
     <ScoreSection />
 
     <GoalSection />

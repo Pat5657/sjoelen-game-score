@@ -9,8 +9,11 @@ const goals = computed(() => scoreboardStore.goals)
 </script>
 
 <template>
-  <section class="container mx-auto bg-secondary py-4 px-2 rounded-2xl h-full">
-    <div class="grid grid-cols-4 gap-2 h-full">
+  <section class="container mx-auto py-4 rounded-2xl h-full flex flex-col gap-4">
+    <div class="flex-1 bg-secondary rounded-2xl p-4 min-h-[100px]">
+
+    </div>
+    <div class="grid grid-cols-4 gap-3">
       <GoalMarker v-for="g in goals" :key="g.points" :goalMarker="g" />
     </div>
   </section>

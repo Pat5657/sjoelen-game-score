@@ -27,14 +27,6 @@ function handleDown() {
 
 <template>
   <div class="flex flex-col">
-    <div class="text-center font-extrabold h-[75px] content-center flex flex-row flex-wrap gap-2 justify-center">
-      <span
-        v-for="i in goalMarker.points"
-        :key="i"
-        class="goal-point-icon"
-      />
-    </div>
-
     <button
       type="button"
       @click="handleUp"
@@ -43,7 +35,15 @@ function handleDown() {
       UP
     </button>
 
-    <div class="flex-1 text-center content-center bg-background text-6xl font-bold">
+    <div class="h-[350px] text-center content-center bg-secondary text-6xl font-bold">
+      <div class="text-center font-extrabold h-[75px] content-center flex flex-row flex-wrap gap-2 justify-center">
+        <span
+          v-for="i in goalMarker.points"
+          :key="i"
+          class="goal-point-icon"
+        />
+      </div>
+
       {{ scored }}
     </div>
 
